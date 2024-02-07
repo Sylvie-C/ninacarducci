@@ -25,6 +25,7 @@ body {
 .nav ul {
 	display: flex;
 	list-style-type: none;
+	font-weight: bold; 
 	font-size: 14px;
 	margin-bottom: 0;
 }
@@ -100,10 +101,6 @@ body {
 	width: 80%;
 	font-size: 14px;
 }
-
-/* #gallery {
-	min-height: 100vh;
-} */
 
 .title{
 	text-align: center;
