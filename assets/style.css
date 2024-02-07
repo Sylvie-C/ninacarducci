@@ -54,6 +54,21 @@ body {
 	width: 20px;
 }
 
+.home_link {
+	position:fixed; 
+	bottom: 10px; 
+	left: 10px; 
+	z-index: 1000;
+}
+
+.home_link img {
+	width: 40px;
+}
+
+.home_link:hover {
+	background-color: #BEB45A;
+}
+
 #about {
 	display: flex;
 	background-color: #F6D2B8;
@@ -273,7 +288,7 @@ footer {
 	text-align: center; 
 }
 
-@media all and (max-width: 1180px) {
+@media (max-width: 1180px) {
 	.picture {
 		flex : 2;
 	}
@@ -292,7 +307,7 @@ footer {
 	}
 }
 
-@media all and (max-width: 1000px) {
+@media (max-width: 1000px) {
 	#about{
 		flex-direction: column;
 
@@ -340,6 +355,11 @@ footer {
 		z-index: 0;
 	}
 
+	#services .title {
+		text-align: left; 
+		margin-left: 2em; 
+	}
+
 	#contact .container {
 		flex-direction: column;
 	}
@@ -356,19 +376,20 @@ footer {
 	}
 }
 
-@media all and (max-width: 650px) {
+@media (max-width: 650px) {
 	.top-header {
 		flex-direction: column;
 		padding-inline: 0;
 	}
-	.top-header .nav, .top-header .nav ul {
+	.top-header .nav {
 		width: 100%;
-		padding: 0 0 0 0;
+		padding: 10px 0;
+		height: fit-content; 
 	}
 	.top-header .nav li {
-		flex: 1;
-		padding-block: 1em;
 		text-align: center;
+		padding-inline: unset; 
+		margin-right: 20px; 
 	}
 	.picture.left::before, .picture.right::before {
 		height: 150px;
@@ -383,6 +404,11 @@ footer {
 		padding-inline: 2em;
 		padding-block: 2em;
 	}
+
+	.about-me__introduction {
+		width: 100%; 
+	}
+
 	form {
 		width: 100%;
 	}
@@ -395,5 +421,10 @@ footer {
 		object-fit: cover; 
 		height: 150px;
 	}
+
+	.home_link img {
+		width: 20px;
+	}
+	
 }
 
