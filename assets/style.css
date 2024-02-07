@@ -120,14 +120,12 @@ body {
 }
 
 .nav-pills .nav-link {
-	color: #000
+	color: #000 ; 
+	border-radius: .25rem; 
 }
 
 .nav-pills .nav-link:hover {
 	cursor: pointer; 
-	border-radius: .25rem; 
-	background-color: #BEB45A;
-	filter: drop-shadow(2px -2px 5px #838383);
 }
 
 .item-column {
