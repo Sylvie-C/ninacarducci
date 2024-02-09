@@ -33,7 +33,83 @@
 	<script defer src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
 	<script defer src="./assets/maugallery.min.js"></script>
 	<script defer src="./assets/scripts.js"></script>
-	<script type="application/ld+json" src="structured-data.json"></script>
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "ImageGallery",
+			"name": "Galerie de photos",
+			"description": "Une collection de superbes photos",
+			"image": [
+			  {
+				"@type": "MusicEvent",
+				"name": "Aaron Paul sur scène",
+				"description": "Concert du chanteur Aaron Paul",
+				"contentUrl": "./assets/images/gallery/concerts/concert_aaron_paul.webp",
+				"license": "Tous droits réservés"
+			  },
+			  {
+				"@type": "ImageObject",
+				"name": "Ali Morshedlou portrait",
+				"description": "Portrait",
+				"contentUrl": "./assets/images/gallery/entreprise/homme_affaire_ali_morshedlou.webp",
+				"license": "Tous droits réservés"
+			  } , 
+			  {
+				"@type": "ImageObject",
+				"name": "Une réunion de travail",
+				"description": "Une réunion de travail dans la gaité",
+				"contentUrl": "./assets/images/gallery/entreprise/femmes_entreprise_jason_goodman.webp",
+				"license": "Tous droits réservés"
+			  } , 
+			  {
+				"@type": "ImageObject",
+				"name": "Wedding day in France",
+				"description": "Cherich memories of a wedding day filled with love",
+				"contentUrl": "./assets/images/gallery/mariage/wedding_hands_hannah_busing.webp",
+				"license": "Tous droits réservés"
+			  } ,
+			  {
+				"@type": "ImageObject",
+				"name": "Ade Tunji portrait",
+				"description": "Portrait",
+				"contentUrl": "./assets/images/gallery/portraits/portrait_ade_tunji.webp",
+				"license": "Tous droits réservés"
+			  } , 
+			  {
+				"@type": "ImageObject",
+				"name": "Wedding day in France",
+				"description": "Cherich memories of a wedding day filled with love",
+				"contentUrl": "./assets/images/gallery/mariage/wedding_kob_owens.webp",
+				"license": "Tous droits réservés"
+			  } , 
+			  {
+				"@type": "ImageObject",
+				"name": "portrait",
+				"description": "Portrait d'une jeune femme pensive derrière un grillage",
+				"contentUrl": "./assets/images/gallery/portraits/portrait_nino_van_prattenburg.webp",
+				"license": "Tous droits réservés"
+			  } , 
+			  {
+				"@type": "MusicEvent",
+				"name": "Austin Neill singer",
+				"description": "Concert du chanteur Austin Neill",
+				"contentUrl": "./assets/images/gallery/concerts/concert_austin_neill.webp",
+				"license": "Tous droits réservés"
+			  } , 
+			  {
+				"@type": "ImageObject",
+				"name": "lawyer woman at work",
+				"description": "une femme au bureau en entreprise rit",
+				"contentUrl": "./assets/images/gallery/entreprise/femme_bureau_entreprise_mateus_campos_felipe.webp",
+				"license": "Tous droits réservés"
+			  } 
+		
+			] 
+		
+			
+		  }
+		  
+	</script>
 </head>
 <body>
 
@@ -100,16 +176,16 @@
 	<div id="gallery">
 		<h2 class="title h3">Portfolio</h2>
 		<div class="container py-3">
-			<div class="gallery" style="display: none">
-				<img data-gallery-tag="Concert" class="gallery-item" srcset="./assets/images/gallery/concerts/small/concert_aaron_paul_small.webp 320w, ./assets/images/gallery/concerts/small/concert_aaron_paul_small.webp 768w, ./assets/images/gallery/concerts/concert_aaron_paul.webp 1024w" sizes="100vw"  src="./assets/images/gallery/concerts/concert_aaron_paul.webp" alt="concert du changeur aaron paul, bras levés du public en premier plan">
-				<img data-gallery-tag="Entreprises" class="gallery-item" srcset="./assets/images/gallery/entreprise/small/homme_affaire_ali_morshedlou_small.webp 320w, ./assets/images/gallery/entreprise/small/homme_affaire_ali_morshedlou_small.webp 768w, ./assets/images/gallery/entreprise/homme_affaire_ali_morshedlou.webp 1024w" sizes="100vw" src="./assets/images/gallery/entreprise/homme_affaire_ali_morshedlou.webp" alt="portrait d'ali morshedlou en costume">
-				<img data-gallery-tag="Entreprises" class="gallery-item" srcset="./assets/images/gallery/entreprise/small/femmes_entreprise_jason_goodman_small.webp 320w, ./assets/images/gallery/entreprise/small/femmes_entreprise_jason_goodman_small.webp 768w, ./assets/images/gallery/entreprise/femmes_entreprise_jason_goodman.webp 1024w" sizes="100vw" src="./assets/images/gallery/entreprise/femmes_entreprise_jason_goodman.webp" alt="deux femmes en réunion en entreprise autour d'une table et qui rient">
-				<img data-gallery-tag="Mariages" class="gallery-item" srcset="./assets/images/gallery/mariage/small/wedding_hands_hannah_busing_small.webp 320w, ./assets/images/gallery/mariage/small/wedding_hands_hannah_busing_small.webp 768w, ./assets/images/gallery/mariage/wedding_hands_hannah_busing.webp 1024w" sizes="100vw" src="./assets/images/gallery/mariage/wedding_hands_hannah_busing.webp" alt="gros plan sur quatre mains qui se rejoignent, deux par deux, au cours d'une cérémonie de mariage">
-				<img data-gallery-tag="Portrait" class="gallery-item" srcset="./assets/images/gallery/portraits/small/portrait_ade_tunji_small.webp 320w, ./assets/images/gallery/portraits/small/portrait_ade_tunji_small.webp 768w, ./assets/images/gallery/portraits/portrait_ade_tunji.webp 1024w" sizes="100vw" src="./assets/images/gallery/portraits/portrait_ade_tunji.webp" alt="portrait d'un homme aux yeux fermés">
-				<img data-gallery-tag="Mariages" class="gallery-item" srcset="./assets/images/gallery/mariage/small/wedding_kob_owens_small.webp 320w, ./assets/images/gallery/mariage/small/wedding_kob_owens_small.webp 768w, ./assets/images/gallery/mariage/wedding_kob_owens.webp 1024w" sizes="100vw" src="./assets/images/gallery/mariage/wedding_kob_owens.webp" alt="un couple de mariés sont dans un jardin bras dessus dessous et rient ensemble">
-				<img data-gallery-tag="Portrait" class="gallery-item" srcset="./assets/images/gallery/portraits/small/portrait_nino_van_prattenburg_small.webp 320w, ./assets/images/gallery/portraits/small/portrait_nino_van_prattenburg_small.webp 768w, ./assets/images/gallery/portraits/portrait_nino_van_prattenburg.webp 1024w" sizes="100vw" src="./assets/images/gallery/portraits/portrait_nino_van_prattenburg.webp" alt="portrait d'une jeune femme pensive derrière un grillage">
+			<div class="gallery" style="display: none" itemscope itemtype="http://schema.org/ImageGallery">
+				<img itemtype="http://schema.org/ImageObject" data-gallery-tag="Concert" class="gallery-item" srcset="./assets/images/gallery/concerts/small/concert_aaron_paul_small.webp 320w, ./assets/images/gallery/concerts/small/concert_aaron_paul_small.webp 768w, ./assets/images/gallery/concerts/concert_aaron_paul.webp 1024w" sizes="100vw"  src="./assets/images/gallery/concerts/concert_aaron_paul.webp" alt="concert du changeur aaron paul, bras levés du public en premier plan">
+				<img itemtype="http://schema.org/ImageObject" data-gallery-tag="Entreprises" class="gallery-item" srcset="./assets/images/gallery/entreprise/small/homme_affaire_ali_morshedlou_small.webp 320w, ./assets/images/gallery/entreprise/small/homme_affaire_ali_morshedlou_small.webp 768w, ./assets/images/gallery/entreprise/homme_affaire_ali_morshedlou.webp 1024w" sizes="100vw" src="./assets/images/gallery/entreprise/homme_affaire_ali_morshedlou.webp" alt="portrait d'ali morshedlou en costume">
+				<img itemtype="http://schema.org/ImageObject" data-gallery-tag="Entreprises" class="gallery-item" srcset="./assets/images/gallery/entreprise/small/femmes_entreprise_jason_goodman_small.webp 320w, ./assets/images/gallery/entreprise/small/femmes_entreprise_jason_goodman_small.webp 768w, ./assets/images/gallery/entreprise/femmes_entreprise_jason_goodman.webp 1024w" sizes="100vw" src="./assets/images/gallery/entreprise/femmes_entreprise_jason_goodman.webp" alt="deux femmes en réunion en entreprise autour d'une table et qui rient">
+				<img itemtype="http://schema.org/ImageObject" data-gallery-tag="Mariages" class="gallery-item" srcset="./assets/images/gallery/mariage/small/wedding_hands_hannah_busing_small.webp 320w, ./assets/images/gallery/mariage/small/wedding_hands_hannah_busing_small.webp 768w, ./assets/images/gallery/mariage/wedding_hands_hannah_busing.webp 1024w" sizes="100vw" src="./assets/images/gallery/mariage/wedding_hands_hannah_busing.webp" alt="gros plan sur quatre mains qui se rejoignent, deux par deux, au cours d'une cérémonie de mariage">
+				<img itemtype="http://schema.org/ImageObject" data-gallery-tag="Portrait" class="gallery-item" srcset="./assets/images/gallery/portraits/small/portrait_ade_tunji_small.webp 320w, ./assets/images/gallery/portraits/small/portrait_ade_tunji_small.webp 768w, ./assets/images/gallery/portraits/portrait_ade_tunji.webp 1024w" sizes="100vw" src="./assets/images/gallery/portraits/portrait_ade_tunji.webp" alt="portrait d'un homme aux yeux fermés">
+				<img itemtype="http://schema.org/ImageObject" data-gallery-tag="Mariages" class="gallery-item" srcset="./assets/images/gallery/mariage/small/wedding_kob_owens_small.webp 320w, ./assets/images/gallery/mariage/small/wedding_kob_owens_small.webp 768w, ./assets/images/gallery/mariage/wedding_kob_owens.webp 1024w" sizes="100vw" src="./assets/images/gallery/mariage/wedding_kob_owens.webp" alt="un couple de mariés sont dans un jardin bras dessus dessous et rient ensemble">
+				<img itemtype="http://schema.org/ImageObject" data-gallery-tag="Portrait" class="gallery-item" srcset="./assets/images/gallery/portraits/small/portrait_nino_van_prattenburg_small.webp 320w, ./assets/images/gallery/portraits/small/portrait_nino_van_prattenburg_small.webp 768w, ./assets/images/gallery/portraits/portrait_nino_van_prattenburg.webp 1024w" sizes="100vw" src="./assets/images/gallery/portraits/portrait_nino_van_prattenburg.webp" alt="portrait d'une jeune femme pensive derrière un grillage">
 				<img data-gallery-tag="Concert" class="gallery-item" srcset="./assets/images/gallery/concerts/small/concert_austin_neill_small.webp 320w, ./assets/images/gallery/concerts/small/concert_austin_neill_small.webp 768w, ./assets/images/gallery/concerts/concert_austin_neill.webp 1024w" sizes="100vw" src="./assets/images/gallery/concerts/concert_austin_neill.webp" alt="le chanteur austin neill sur scène">
-				<img data-gallery-tag="Entreprises" class="gallery-item" srcset="./assets/images/gallery/entreprise/small/femme_bureau_entreprise_mateus_campos_felipe_small.webp 320w, ./assets/images/gallery/entreprise/small/femme_bureau_entreprise_mateus_campos_felipe_small.webp 768w, ./assets/images/gallery/entreprise/femme_bureau_entreprise_mateus_campos_felipe.webp 1024w" sizes="100vw" src="./assets/images/gallery/entreprise/femme_bureau_entreprise_mateus_campos_felipe.webp" alt="une femme au bureau en entreprise rit">
+				<img itemtype="http://schema.org/ImageObject" data-gallery-tag="Entreprises" class="gallery-item" srcset="./assets/images/gallery/entreprise/small/femme_bureau_entreprise_mateus_campos_felipe_small.webp 320w, ./assets/images/gallery/entreprise/small/femme_bureau_entreprise_mateus_campos_felipe_small.webp 768w, ./assets/images/gallery/entreprise/femme_bureau_entreprise_mateus_campos_felipe.webp 1024w" sizes="100vw" src="./assets/images/gallery/entreprise/femme_bureau_entreprise_mateus_campos_felipe.webp" alt="une femme au bureau en entreprise rit">
 			</div>
 		</div>
 		<div class="quote">
@@ -192,13 +268,13 @@
 
 <footer>
 	<address itemscope itemtype="http://schema.org/LocalBusiness">
-		<span itemprop="name">Nina Carducci</span>
+		<span itemprop="name">Nina Carducci photographies</span>
 		<div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
 		<span itemprop="streetAddress">67 Avenue Alsace Lorraine</span>
 		<span itemprop="postalCode">33200</span>
 		<span itemprop="addressLocality">Bordeaux</span> <br>
 		<span itemprop="telephone">05 56 67 78 89</span> <br>
-		<span itemprop="openingHours" content="Lun - Ven 10:00 - 19:00">Horaires : Lun - Ven / 10h - 19h</span>
+		<time itemprop="openingHours" content="Lun - Ven 10:00 - 19:00">Horaires : Lun - Ven / 10h - 19h</time>
 		</div>
 	</address>
 </footer>
