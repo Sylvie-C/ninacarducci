@@ -119,7 +119,7 @@ body {
 
 .title{
 	text-align: center;
-	padding-block: 2em;
+	padding-block-start: 2em; 
 }
 
 .gallery .nav {
@@ -179,9 +179,10 @@ body {
 	padding-block: 3em;
 }
 .quote__text {
+	font-size: 22px; 
 	font-family: Spectral;
 	font-style: italic;
-	font-weight: 300;
+	/* font-weight: 400; */
 
 }
 .quote__author {
